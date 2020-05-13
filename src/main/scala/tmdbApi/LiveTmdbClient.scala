@@ -40,7 +40,7 @@ class LiveTmdbClient(client: SttpBackend[Identity, Nothing, NothingT]) extends T
 }
 
 object LiveTmdbClient {
-  val API_KEY = "808cd9823f83744a8ebd68dd4664e076"
+  val API_KEY = "api_key"
   val API_BASE_URL = "https://api.themoviedb.org/3"
 
   def apply(client: SttpBackend[Identity, Nothing, NothingT]): LiveTmdbClient = new LiveTmdbClient(client)
